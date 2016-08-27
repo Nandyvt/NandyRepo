@@ -1,6 +1,6 @@
 package com.tutorialspoint;
 
-import java.io.Serializable;
+import java.io.Serializable ;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -14,10 +14,13 @@ public class User implements Serializable {
 
    public User(){}
    
+   
+   
    public User(int id, String name, String profession){
       this.id = id;
       this.name = name;
       this.profession = profession;
+      System.out.println("");
    }
 
    public int getId() {
