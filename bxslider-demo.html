@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="ie6">    <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7">    <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8 ie">    <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9 ie">    <![endif]-->
+
+<!-- jQuery library (served from Google) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="container" style="border:5px solid coral;">
+
+<ul class="bxslider">
+  <li><img width="500" height="500" alt="Image Here" style="background-color:orange" src="/images/pic1.jpg" /></li>
+  <li><img width="500" height="500" alt="Image Here" style="background-color:grey" src="/images/pic2.jpg" /></li>
+  <li><img width="500" height="500" alt="Image Here" style="background-color:blue" src="/images/pic3.jpg" /></li>
+  <li><img width="500" height="500" alt="Image Here" style="background-color:yellow" src="/images/pic4.jpg" /></li>
+</ul>
+
+</div>
+
+<script>
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+  responsive:true,
+  touchEnabled:true,
+  slideWidth:500,
+  minSlides:3,
+  maxSlides:4,
+  shrinkItems:true,
+  infiniteLoop:false
+  });
+});
+</script>
+
+</body>
+</html>
